@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\feedback.css">
+    <title>Feedback Form</title>
+</head>
+<body><center>
+<div class="feedback">
+        <h1>Feedback Form</h1><hr>
+        <label for="Name" class="formbuilder-text-label">Name</label>
+        <input type="text" placeholder="Name" name="Name" access="false"  id="Name" class="tb"><br>
+    
+        <label for="subs">Are you a current subscriber?</label><br>
+                <input name="subs"  id="subs-0" value="option-1" type="radio" checked="checked" >
+                <label for="subs-0">Yes</label>
+         
+                <input name="subs"  id="subs-1" value="option-2" type="radio" checked="checked">
+                <label for="subs-1">No</label><br>
+            
+        <label for="rate" >How would you rate the service?</label><br>
+        
+                <input name="rate" id="rate-0" value="option-1" type="radio">
+                <label for="rate-0">Good</label>
+            
+                <input name="rate" id="rate-1" value="option-2" type="radio">
+                <label for="rate-1">Satisfactory</label>
+           
+                <input name="rate"  id="rate-2" value="option-3" type="radio">
+                <label for="rate-2">Bad</label><br>
+       
+    
+        <label for="selection" >How did you come to know about our website?</label><br>
+        <select name="selection[]" id="selection">
+            <option value="option-1" id="selection-0">Web Ads</option>
+            <option value="option-2" id="selection-1">Social Media</option>
+            <option value="option-3" id="selection-2">Newspaper</option>
+            <option id="selection-3">Friends</option>
+        </select><br>
+    
+        <label for="Tell" >Tell us more!</label><br>
+        <textarea type="textarea" name="Tell"  rows="5" id="Tell" class="tb">Tell</textarea><br>
+
+        <button type="submit" class="button btn-success btn" name="f_button" value="Submit"  style="success" id="f_button">Submit</button>
+</div>
+</center></body>
+</html>

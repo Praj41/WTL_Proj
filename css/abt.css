@@ -1,0 +1,46 @@
+body{
+    background-color: #E4EFE7;
+    color: rgb(5, 1, 1);
+    }
+    
+    .topnav {
+        font-size: 19px;
+        overflow: hidden;
+        position: relative;
+        right: 5px;
+        float: right;
+        display: flex;
+        flex-direction: row;
+        margin-right: 0px;
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #798777;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #F9F9F9;
+        color: black;
+      }
+      
+      /* Add a color to the active/current link */
+      .topnav a.active {
+        background-color: #f9f9f9;
+        color: #7F7C82;
+      }
+
+      .ourStory{
+        display: flex;
+        flex-direction: row;
+      }
+
+      .Goals{
+          width: 60%;
+      }
