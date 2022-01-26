@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Registration Form</title>
     <link rel="stylesheet" href="../css/reg.css">
+	<script>
+		function gotoPage() {
+			window.location.href = "../PHP/register.php";
+		}
+	</script>
 </head>
 <body><center>
     <header id ="Register">
-        <form action="post" action="../PHP/register.php">
+        <form method="POST" action="../PHP/register.php">
 			<img src="../images/icon-register.png" alt="" height="220px" width="220px">
            <div class="textt">
             <h2><center>Create Your Account</center></h2>
@@ -15,31 +20,31 @@
 	<table cellspacing="2" align="center" cellpadding="8" border="0">
 	<tr>
 	<td align="right">Enter Name :</td>
-	<td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+	<td><input type="text" placeholder="Enter user here" name="name" id="t1" class="tb" /></td>
 	</tr>
 	<tr>
 	<td align="right">Enter Email ID :</td>
-	<td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" /></td>
+	<td><input type="text" placeholder="Enter Email ID here" name="email" id="t2" class="tb" /></td>
 	</tr>
 	<tr>
 	<td align="right">Enter Username :</td>
-	<td><input type="text" placeholder="Enter Username here" id="t3" class="tb" /></td>
+	<td><input type="text" placeholder="Enter Username here" name="username" id="t3" class="tb" /></td>
 	</tr>
 	<tr>
 	<td align="right">Enter Password :</td>
-	<td><input type="password" placeholder="Enter Password here" id="t4" class="tb" /></td>
+	<td><input type="password" placeholder="Enter Password here" name="password" id="t4" class="tb" /></td>
 	</tr>
 	<tr>
 	<td align="right">Confirm Password :</td>
-	<td><input type="password" placeholder="Enter Password here" id="t5" class="tb" /></td>
+	<td><input type="password" placeholder="Enter Password here" name="conf_password" id="t5" class="tb" /></td>
 	</tr>
-	
-	
+
+
 	</table>
 </div>
-        </form>
 		<center><input type="reset" value="Clear Form"  class="btn">
-			<input type="submit" value="Create Account" class="btn" ></center>
-    </header></center>
+			<input type="submit" value="Create Account" class="btn" onclick="gotoPage()"></center>
+		</form>
+	</header></center>
 </body>
 </html>
